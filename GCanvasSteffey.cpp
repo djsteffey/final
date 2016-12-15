@@ -1537,3 +1537,8 @@ void GCanvasSteffey::drawMesh(int triCount, const GPoint pts[], const int indice
 		index += 3;
 	}
 }
+
+GShader* GCanvasSteffey::makeRadialGradient(float cx, float cy, float radius, const GColor colors[], int count)
+{
+	return new GShaderRadial(cx, cy, radius, colors, count);
+}

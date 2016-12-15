@@ -16,6 +16,7 @@
 #include "PolygonEdge.hpp"
 #include <stack>
 #include "include/GContour.h"
+#include "GShaderRadial.hpp"
 
 
 class GCanvasSteffey : public GCanvas
@@ -49,6 +50,9 @@ public:
 
 	// draw a mesh
 	void drawMesh(int triCount, const GPoint pts[], const int indices[], const GColor colors[], const GPoint tex[], const GPaint& paint) override;
+	
+	GShader* makeRadialGradient(float cx, float cy, float radius, const GColor colors[], int count) override;
+
 
 protected:
 	
