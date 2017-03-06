@@ -43,4 +43,4 @@ void blend_opaque(const GPixel& source, GPixel* dest, int count);
 void blend(const GPixel* source, GPixel* dest, int count);	
 unsigned int divide_by_255(unsigned int p);
 
-#endifit worked!!!
+#endif
